@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         animatedTexts[1].classList.remove("hidden");
     }, 5000);
     
-    noButton.addEventListener("click", function () {
+    yesButton.addEventListener("click", function () {
         alert("Confetti Explosion! 🎉 But seriously, think again!");
     });
     
