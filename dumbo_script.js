@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const animatedTexts = document.querySelectorAll(".animated-text");
     const noButton = document.getElementById("no-button");
     const convinceButton = document.getElementById("convince-btn");
+    const yesButton = document.getElementById("yes-button");
     const dumboPic = document.getElementById("dumbo-pic");
     const secretMessage = document.getElementById("secret-message");
     
@@ -17,16 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
         animatedTexts[1].classList.remove("hidden");
     }, 5000);
     
-    yesButton.addEventListener("click", function () {
+    noButton.addEventListener("click", function () {
         alert("Confetti Explosion! 🎉 But seriously, think again!");
     });
     
-   yesButton.addEventListener("mouseover", function () {
-    yesButton.style.position = "absolute";
-    yesButton.style.left = Math.random() * 90 + "%";
-    yesButton.style.top = Math.random() * 90 + "%";
-});
-
+    convinceButton.addEventListener("mouseover", function () {
+        convinceButton.style.position = "absolute";
+        convinceButton.style.left = Math.random() * 90 + "%";
+        convinceButton.style.top = Math.random() * 90 + "%";
+    });
+    
+    yesButton.addEventListener("click", function () {
+        alert("Yay! 🎉 Be ready on Monday 2nd half! ❤️");
+    });
     
     dumboPic.addEventListener("click", function () {
         secretMessage.classList.remove("hidden");
