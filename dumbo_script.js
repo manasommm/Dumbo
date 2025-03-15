@@ -21,11 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Confetti Explosion! 🎉 But seriously, think again!");
     });
     
-    convinceButton.addEventListener("mouseover", function () {
-        convinceButton.style.position = "absolute";
-        convinceButton.style.left = Math.random() * 90 + "%";
-        convinceButton.style.top = Math.random() * 90 + "%";
-    });
+   yesButton.addEventListener("mouseover", function () {
+    yesButton.style.position = "absolute";
+    yesButton.style.left = Math.random() * 90 + "%";
+    yesButton.style.top = Math.random() * 90 + "%";
+});
+
     
     dumboPic.addEventListener("click", function () {
         secretMessage.classList.remove("hidden");
