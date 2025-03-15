@@ -72,14 +72,14 @@
     </style>
 </head>
 <body>
-    <div class="loading" id="loading">Dumbo.exe is loading... please wait for cuteness overload! 💖</div>
+    <div class="loading" id="loading">Dumbo.exe is loading... Please Wait for Cuteness Overload! 💖</div>
     
     <div class="container" id="mainContent">
         <p id="message">Are you still mad at me?</p>
         <p>It’s been more than 15 days, 360 hours, and way too many seconds since we last talked... but who's counting? (Okay, maybe me.)</p>
         <p>I know we had a minor glitch (okay, maybe a little fight), but honestly, life feels kinda incomplete without annoying you.</p>
         <p>So, instead of sending a boring text, I did what any rational person would do—built a whole website for you.</p>
-        <p>So… what do you say? Shall we hit the refresh button and go out for a coffee (or whatever you like)?</p>
+        <p>So… what do you say? Shall we hit the refresh button and go out for Lunch (or whatever you like)?</p>
         
         <button class="button yes" onclick="acceptDate()">Yes, Let’s Do It! ❤️</button>
         <button class="button no" id="noButton" onmouseover="runAway()">Hmm… Convince Me More 🤔</button>
@@ -98,12 +98,12 @@
             setTimeout(() => {
                 let message = document.getElementById("message");
                 message.innerText = "Come on, you know I’m your favorite idiot! 😂";
-                message.style.color = "#f8f402";
+                message.style.color = "#f8a608";
             }, 4000);
         }, 4000);
 
         function acceptDate() {
-            alert("Yay! Be ready on Monday 2nd half! ❤️");
+            alert("Yay! Be ready on Monday 2nd Half! PLEASE🫠❤️");
             fetch('https://your-server.com/saveResponse', { method: 'POST', body: JSON.stringify({ response: 'yes' }) });
         }
 
