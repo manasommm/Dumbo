@@ -63,6 +63,12 @@
             from { transform: translateY(0); opacity: 1; }
             to { transform: translateY(-50px); opacity: 0; }
         }
+        #message {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            transition: color 0.5s;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +85,7 @@
         <button class="button no" id="noButton" onmouseover="runAway()">Hmm… Convince Me More 🤔</button>
         
         <div style="margin-top: 20px;" onclick="dropHeart()">
-            <img src="dumbo_pic.jpg" alt="Dumbo 🐒" class="dumbo-img">
+            <img src="dumbo.jpg" alt="Dumbo 🐒" class="dumbo-img">
         </div>
         
         <p class="secret" onclick="revealSecret()">Secret Message (Click me!)</p>
@@ -89,7 +95,11 @@
         setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("mainContent").style.display = "block";
-            setTimeout(() => document.getElementById("message").innerText = "Come on, you know I’m your favorite idiot! 😂", 3000);
+            setTimeout(() => {
+                let message = document.getElementById("message");
+                message.innerText = "Come on, you know I’m your favorite idiot! 😂";
+                message.style.color = "blue";
+            }, 3000);
         }, 3000);
 
         function acceptDate() {
@@ -118,3 +128,4 @@
     </script>
 </body>
 </html>
+
