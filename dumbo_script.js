@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector(".container");
     const animatedTexts = document.querySelectorAll(".animated-text");
     const noButton = document.getElementById("no-button");
-    const yesButton = document.getElementById("yes-button");
+    const convinceButton = document.getElementById("convince-btn");
     const dumboPic = document.getElementById("dumbo-pic");
     const secretMessage = document.getElementById("secret-message");
     
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Confetti Explosion! 🎉 But seriously, think again!");
     });
     
-    yesButton.addEventListener("mouseover", function () {
-        yesButton.style.position = "absolute";
-        yesButton.style.left = Math.random() * 90 + "%";
-        yesButton.style.top = Math.random() * 90 + "%";
+    convinceButton.addEventListener("mouseover", function () {
+        convinceButton.style.position = "absolute";
+        convinceButton.style.left = Math.random() * 90 + "%";
+        convinceButton.style.top = Math.random() * 90 + "%";
     });
     
     dumboPic.addEventListener("click", function () {
