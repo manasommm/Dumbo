@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumbo's Gift</title>
-    <link rel="stylesheet" href="dumbo_style_updated.css">
-    <script defer src="dumbo_js_updated.js"></script>
+    <title>Dumbo 🐒, Are You Still Mad?</title>
+    <link rel="stylesheet" href="dumbo_style.css">
 </head>
 <body>
-
-    <div id="loading-screen">
-        <h2>Dumbo.exe is loading... please wait for cuteness overload! 🐵</h2>
-    </div>
-
-    <div id="main-content" style="display: none;">
-        <h1 id="animated-text">Are you still mad at me?</h1>
-        <button id="yes-button">YES</button>
-        <button id="no-button">NO</button>
-
-        <div id="secret-message">
-            <p>Click to reveal a secret message!</p>
+    <div class="loading-screen">Dumbo.exe is loading... please wait for cuteness overload!</div>
+    <div class="container hidden">
+        <h1 class="animated-text">Are you still mad at me?</h1>
+        <h1 class="animated-text hidden">Come on, you know I’m your favorite idiot! 😂</h1>
+        <img src="dumbo_pic.jpg" id="dumbo-pic" alt="Dumbo 🐒">
+        <p class="message">Hey Dumbo 🐒,<br><br>
+            It’s been more than 15 days, 360 hours, and way too many seconds since we last talked... but who's counting? (Okay, maybe me.)<br><br>
+            I know we had a minor glitch (okay, maybe a little fight), but honestly, life feels kinda incomplete without annoying you. So, instead of sending a boring text, I did what any rational person would do—built a whole website for you.<br><br>
+            So… what do you say? Shall we hit the refresh button and go out for a coffee (or whatever you like)?
+        </p>
+        <div class="buttons">
+            <button id="yes-button">Yes, Let’s Do It! ❤️</button>
+            <button id="no-button">Hmm… Convince Me More 🤔</button>
         </div>
-
-        <img src="dumbo_pic.jpg" alt="Dumbo Pic" id="dumbo-img">
+        <div id="secret-message" class="hidden">Be ready on Monday 2nd half! 😍</div>
     </div>
-
+    <script src="dumbo_script.js"></script>
 </body>
 </html>
