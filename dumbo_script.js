@@ -22,10 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Confetti Explosion! 🎉 But seriously, think again!");
     });
     
+    convinceButton.style.position = "absolute";
     convinceButton.addEventListener("mouseover", function () {
-        convinceButton.style.position = "absolute";
-        convinceButton.style.left = Math.random() * 90 + "%";
-        convinceButton.style.top = Math.random() * 90 + "%";
+        const maxX = window.innerWidth - convinceButton.clientWidth;
+        const maxY = window.innerHeight - convinceButton.clientHeight;
+        convinceButton.style.left = Math.random() * maxX + "px";
+        convinceButton.style.top = Math.random() * maxY + "px";
     });
     
     yesButton.addEventListener("click", function () {
@@ -36,4 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
         secretMessage.classList.remove("hidden");
     });
 });
-
